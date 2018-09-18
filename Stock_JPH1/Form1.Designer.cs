@@ -28,13 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.axKHOpenAPI = new AxKHOpenAPILib.AxKHOpenAPI();
+            ((System.ComponentModel.ISupportInitialize)(this.axKHOpenAPI)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // axKHOpenAPI
+            // 
+            this.axKHOpenAPI.Enabled = true;
+            this.axKHOpenAPI.Location = new System.Drawing.Point(12, 413);
+            this.axKHOpenAPI.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.axKHOpenAPI.Name = "axKHOpenAPI";
+            this.axKHOpenAPI.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axKHOpenAPI.OcxState")));
+            this.axKHOpenAPI.Size = new System.Drawing.Size(80, 24);
+            this.axKHOpenAPI.TabIndex = 12;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.axKHOpenAPI);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.axKHOpenAPI)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private AxKHOpenAPILib.AxKHOpenAPI axKHOpenAPI;
     }
 }
 
